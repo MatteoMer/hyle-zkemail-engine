@@ -11,7 +11,7 @@ We provide an example project: a provable chess game played via email.
 - **Onchain settlement**: Settle your game on the Hylé chain at low cost and without latency.
 
 Learn more:
-- [Generic presentation on the Hylé podcast](https://www.youtube.com/watch?v=QZjBa_WTvc8&list=PLmpAagesyEIVEB6_BKF5FH9A7gMaNCyaE&index=1)
+- [Generic presentation on the Hyli podcast](https://www.youtube.com/watch?v=QZjBa_WTvc)
 - Technical presentation at Real World Cryptography Paris //TODO
 
 ## How it works
@@ -23,13 +23,13 @@ Learn more:
 1. Using zkEmail and RISC Zero, the referee server generates two proofs:
     * [zkEmail](https://prove.email/) generates proof of the state transition sent by email.
     * The [shakmaty library](https://github.com/niklasf/shakmaty) + [RISC Zero](https://www.risc0.com/) allow for easy proof generation that the final email includes a mate.
-4. [Hylé](https://hyle.eu) verifies and settles both proofs in a single transaction without requiring the proofs to reference each other.
+4. [Hyli](https://hyli.org) verifies and settles both proofs in a single transaction without requiring the proofs to reference each other.
 
 ### Components
 - 2 players sending each other emails
 - A chess engine processing the emails to find the winning condition
 - A referee server receiving emails and generating the final zk proofs
-- Hylé to verify and settles the final proofs
+- Hyli to verify and settle the final proofs
 
 ## Future improvements
 ### Planned
@@ -47,7 +47,9 @@ Learn more:
 
 
 ## Sponsor
-*This project is supported by [Hylé](hyle.eu), the lean blockchain for your provable apps*
+
 <p align="left">
-  <a href="https://hyle.eu" target="_blank"> <img src="https://blog.hyle.eu/content/images/2024/10/Hyl-_widelogo_lightbg.png" width="15%", height="15%"/></a>
+  <a href="https://hyli.org" target="_blank"> <img src="https://github.com/hyli-org/hyli-assets/blob/main/Logos/Logo/HYLI_WORDMARK_ORANGE.png?raw=true" width="15%", height="15%"/></a>
 </p>
+
+*This project is supported by [Hyli](https://hyli.org), the new proof-powered L1 to build the next generation of apps, as part of the [Hyli grant program](https://github.com/hyli-org/hyli/blob/main/GRANTS.md).*
